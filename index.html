@@ -3,48 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRAKONFURY Gaming</title>
+    <title>DRAKONFURY</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: white;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #0d0d0d;
+            background-color: #181818;
             padding: 20px;
             text-align: center;
+            animation: fadeIn 2s;
+        }
+        h1 {
+            font-size: 3em;
         }
         .about {
-            margin: 20px;
             padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-            background-color: #222;
+            font-size: 1.2em;
+            animation: slideIn 1s;
         }
         .games {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 20px;
+            padding: 20px;
         }
-        .game-tile {
-            background-color: #333;
-            border-radius: 8px;
+        .game {
+            background-color: #1e1e1e;
+            border: 2px solid #007bff;
+            border-radius: 10px;
             margin: 10px;
             padding: 10px;
-            text-align: center;
-            animation: fadeIn 0.5s;
+            transition: transform 0.3s;
+            width: 30%;
         }
-        img {
-            width: 100%;
-            border-radius: 8px;
+        .game img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .game:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .game {
+                width: 100%;
+            }
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
@@ -53,20 +68,23 @@
         <h1>DRAKONFURY</h1>
     </header>
     <div class="about">
-        <h2>À propos</h2>
-        <p>J'aime les jeux vidéo et les technologies de l'information. Ils font partie intégrante de ma vie et j'adore explorer les nouvelles tendances et les innovations dans ce domaine.</p>
+        <p>
+            J'adore les jeux vidéo et l'informatique. Depuis mon enfance, je me suis passionné par les mondes virtuels, 
+            explorant des univers fascinants et maîtrisant les compétences nécessaires pour naviguer dans le monde numérique. 
+            La technologie et le jeu vont de pair, et c'est cette synergie qui m'inspire chaque jour.
+        </p>
     </div>
     <div class="games">
-        <div class="game-tile">
-            <img src="link_to_call_of_duty_image.jpg" alt="Call of Duty">
+        <div class="game">
+            <img src="path-to-cod-image.jpg" alt="Call of Duty">
             <h3>Call of Duty</h3>
         </div>
-        <div class="game-tile">
-            <img src="link_to_forza_horizon_6_image.jpg" alt="Forza Horizon 6">
+        <div class="game">
+            <img src="path-to-forza-image.jpg" alt="Forza Horizon 6">
             <h3>Forza Horizon 6</h3>
         </div>
-        <div class="game-tile">
-            <img src="link_to_fc_25_image.jpg" alt="FC 25">
+        <div class="game">
+            <img src="path-to-fc-image.jpg" alt="FC 25">
             <h3>FC 25</h3>
         </div>
     </div>
