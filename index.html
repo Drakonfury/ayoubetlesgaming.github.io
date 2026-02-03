@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ayoub et les Gaming</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f1a;
-      color: #ffffff;
-      text-align: center;
-    }
-    header {
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #0d1b3d, #091124);
-    }
-    h1 {
-      color: #4da3ff;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      padding: 20px;
-      background: #05080f;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoub et les Gaming</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #1E1E1E;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #00BFFF;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width: 600px) {
+            .video-section {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-  <h1>🎮 Ayoub et les Gaming</h1>
-  <p>Bienvenue sur mon site officiel</p>
-</header>
-
-<section>
-  <h2>🔥 À propos</h2>
-  <p>Chaîne gaming : fun, défis et bonnes vibes.</p>
-</section>
-
-<section>
-  <h2>📺 YouTube</h2>
-  <p>
-    <a href="https://www.youtube.com" target="_blank">
-      Voir ma chaîne
-    </a>
-  </p>
-</section>
-
-<footer>
-  © 2026 Ayoub et les Gaming
-</footer>
-
+    <header>
+        <h1>Ayoub et les Gaming</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Games</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Welcome to Ayoub et les Gaming!</h2>
+        <p>Your ultimate destination for everything gaming. Enjoy and explore!</p>
+        <div class="video-section">
+            <div>
+                <h3>YouTube Channel</h3>
+                <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h3>Twitch Stream</h3>
+                <iframe src="https://player.twitch.tv/?channel=your_channel_name" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
